@@ -3,20 +3,50 @@
  */
 
 @import "bootstrap/bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 /* ==========================================================================
    Base
    ========================================================================== */
+html {min-height: 100%;}
+body {
+  min-height: 100%;
+  height: 100%;
+  background: url('/assets/img/bgs/blue.jpg') no-repeat;
+  background-position: 0 -50%;
+  background-size: cover;
+  
+}
 
-body { }
-
-
+@blue :#043d91;
+@navlinks: #CCC;
+@navlinks-hover: #FFF;
+@rounded-radius: 10px;
+@padding: 1em;
+@opacity: 0.9;
 
 /* ==========================================================================
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+  opacity: @opacity;
+  background-color: @blue;
+  font-family: 'Open Sans', sans-serif;
+
+  .navbar-nav > li > a {
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: @navlinks;
+  }
+  .navbar-nav > li > a:hover {
+    color: @navlinks-hover;
+  }
+  .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: @blue;
+  }
+}
 
 
 
@@ -24,10 +54,55 @@ body { }
    Content
    ========================================================================== */
 
-.content { }
+.content {
+  background: rgba(255,255,255,@opacity);
+  padding: @padding;
+  border-radius: @rounded-radius;
+}
+
+.page-header {
+  margin: 0 0 20px;
+}
 
 
+/* ==========================================================================
+   Homepage Content
+   ========================================================================== */
 
+#keyshot {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: -25%;
+  height: 90%;
+  z-index: 10;
+  display: none;
+}
+
+.roundSlideshow {
+  position: absolute;
+  bottom: 5%;
+  z-index: 20;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  overflow: hidden;
+  background: white;
+  border: 10px solid white;
+  img {
+    min-height: 300px;
+    min-width: 400px;
+    margin-left: -75px;
+    margin-top: -20px;
+    position: absolute;
+  }
+}
+#leftSlider {
+  left: 5%;
+}
+#rightSlider {
+  right: 5%;
+}
 /* ==========================================================================
    Primary Content
    ========================================================================== */
@@ -37,7 +112,14 @@ body { }
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
 
-
+.thumbnail {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  img {
+    border-radius: 50%;
+  }
+}
 
 /* ==========================================================================
    Sidebar
