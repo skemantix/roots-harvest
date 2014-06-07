@@ -28,11 +28,16 @@ function roots_scripts() {
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
-
+  wp_register_script('fancybox', get_template_directory_uri() . '/assets/js/vendor/fancybox/jquery.fancybox-1.3.4_patch.js', false, null, false);
+  wp_register_script('fancybox_easing', get_template_directory_uri() . '/assets/js/vendor/fancybox/jquery.easing-1.3.pack.js', false, null, false);
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', array(), null, false);
+  wp_register_script('pdfobject', get_template_directory_uri() . '/assets/js/vendor/pdfobject.js', false, null, true);
   wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '0fc6af96786d8f267c8686338a34cd38', true);
   wp_register_script('roots_main_js', get_template_directory_uri() . '/assets/js/_main.js', array(), null, false);
   wp_enqueue_script('modernizr');
+  wp_enqueue_script('pdfobject');
+  wp_enqueue_script('fancybox');
+  wp_enqueue_script('fancybox_easing');
   wp_enqueue_script('jquery');
   wp_enqueue_script('roots_scripts');
   wp_enqueue_script('roots_main_js');

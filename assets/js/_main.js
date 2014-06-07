@@ -24,6 +24,40 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on all pages
 
+        $('.mailingList').css({'cursor':'pointer'}).click(function(e){
+            $.fancybox({
+                href: '#contactForm'
+            });
+        });
+
+        $('.performers').css({'cursor':'pointer'}).click(function(e){
+            window.location.href = '/performers/dj-lineup';
+        });
+
+        $('.location').css({'cursor':'pointer'}).click(function(e){
+            window.location.href = '/location';
+        });
+
+        $('.tickets').css({'cursor':'pointer'}).click(function(e){
+            window.location.href = '/costs';
+        });
+
+        $('.menu-ride-share-board a, .menu-videos a').attr('target','_blank');
+
+
+        $("a.fancybox").fancybox({
+            'padding'			: 	20,
+            'transitionIn'		:	'elastic',
+            'transitionOut'		:	'elastic',
+            'speedIn'			:	666,
+            'speedOut'			:	444,
+            'centerOnScroll'	:	true,
+            'overlayOpacity'	:	0.8,
+            'overlayColor'		: 	'#333',
+            'titleShow'			: 	false,
+        });
+
+
     }
   },
   // Home page
@@ -34,21 +68,28 @@ var Roots = {
         var transSpeed = 1800;
         var duration = 4000;
 
-        $('#leftSlider img:gt(0)').hide();
+        $('#leftSlider img:gt(0), #rightSlider img:gt(0)').hide();
         setInterval(function(){
                 $('#leftSlider :first-child').fadeOut(transSpeed)
                     .next('img').fadeIn(transSpeed)
                     .end().appendTo('#leftSlider');},
             duration);
 
-        $('#rightSlider img:gt(0)').hide();
-        setInterval(function(){
-                $('#rightSlider :first-child').fadeOut(transSpeed)
-                    .next('img').fadeIn(transSpeed)
-                    .end().appendTo('#rightSlider');},
-            duration);
+        setTimeout(function(){
+            setInterval(function(){
+                    $('#rightSlider :first-child').fadeOut(transSpeed)
+                        .next('img').fadeIn(transSpeed)
+                        .end().appendTo('#rightSlider');},
+                duration);
+        }, duration/2);
 
-
+        /*
+        $('#basicModal').modal({
+            "backdrop": true,
+            "keyboard": true,
+            "show": true
+        });
+        */
 
     }
   },
@@ -57,7 +98,24 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+  photos: {
+    init: function() {
+
+        $('.gallery a.thumbnail').attr('rel', 'gallery').fancybox({
+            'padding'			: 	20,
+            'transitionIn'		:	'elastic',
+            'transitionOut'		:	'elastic',
+            'speedIn'			:	666,
+            'speedOut'			:	444,
+            'centerOnScroll'	:	true,
+            'overlayOpacity'	:	0.8,
+            'overlayColor'		: 	'#333',
+            'titleShow'			: 	false,
+        });
+    }
   }
+
 };
 
 // The routing fires all common scripts, followed by the page specific scripts.
