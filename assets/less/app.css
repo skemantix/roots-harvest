@@ -5792,7 +5792,7 @@ body {
    Header
    ========================================================================== */
 .banner {
-  opacity: 0.9;
+  opacity: 0.92;
   background-color: #043d91;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
@@ -5822,21 +5822,111 @@ body {
 }
 .content #testDiv {
   font-family: 'Open Sans', sans-serif;
-  padding: 2.5em;
-  border-radius: 10px;
-  border: 10px solid #ffffff;
+  padding: 2em;
+  border-radius: 20px;
+  border: 7px solid #ffffff;
   background-clip: padding-box;
   background: rgba(12, 51, 191, 0.87);
   color: #EEE;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25em;
 }
 .content #testDiv p {
-  margin: 0 0 2em 0;
+  margin: 0 0 1.4em 0;
+}
+.content #testDiv img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+  border-radius: 13.2px;
+}
+.content #testDiv h4 {
+  font-weight: 600;
+}
+.content #testDiv ul {
+  margin: 1em 0em 2em;
+}
+.content #testDiv li {
+  margin-bottom: 0.5em;
+}
+.content #testDiv a {
+  font-weight: 600;
+}
+body.location .content #testDiv {
+  background: rgba(217, 78, 0, 0.92);
+}
+body.tickets .content #testDiv {
+  background: rgba(90, 52, 95, 0.92);
+}
+body.tickets .content #testDiv h3 {
+  color: #ffcb57;
+  font-weight: 600;
+}
+body.camping .content #testDiv {
+  background: rgba(15, 88, 5, 0.92);
+}
+body.camping .content #testDiv h4 {
+  color: #ffcb57;
+}
+body.installations .content #testDiv {
+  background: rgba(170, 15, 15, 0.92);
+}
+body.thermodome-cafe .content #testDiv {
+  background: rgba(209, 109, 77, 0.92);
+}
+body.buses .content #testDiv {
+  background: rgba(148, 83, 96, 0.92);
+}
+body.buses .content #testDiv ul {
+  margin-top: 2.5em;
+}
+body.buses .content #testDiv li {
+  margin-top: 1.5em;
 }
 body.the-pyramid .content #testDiv {
-  background: rgba(10, 10, 10, 0.92);
+  color: #333;
+  background: rgba(233, 167, 26, 0.92);
+}
+body.the-pyramid .content #testDiv a {
+  color: #cd5500;
+}
+body.blog .content #testDiv,
+body.single .content #testDiv {
+  padding: 1em 2em;
+  background: rgba(146, 38, 42, 0.92);
+  margin-bottom: 2em;
+}
+body.blog .content #testDiv h2 a,
+body.single .content #testDiv h2 a {
+  color: #da7885 !important;
+  font-weight: 400;
+  font-size: 125%;
+}
+body.blog .content #testDiv h1,
+body.single .content #testDiv h1 {
+  color: #da7885;
+}
+body.blog .content #testDiv article a,
+body.single .content #testDiv article a {
+  color: #cd4b4a;
+}
+body.blog .content #testDiv article p.author,
+body.single .content #testDiv article p.author {
+  display: none;
+}
+body.blog .content #testDiv article time,
+body.single .content #testDiv article time {
+  display: inline-block;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 84%;
+}
+body.contact-us .content #testDiv {
+  background: rgba(0, 136, 154, 0.92);
+}
+body.contact-us .content #testDiv a {
+  color: #67edff;
 }
 .page-header {
   margin: 0 0 20px;
@@ -5846,6 +5936,7 @@ body.the-pyramid .content #testDiv {
   font-size: 3em;
   color: white;
   font-weight: 600;
+  text-shadow: 1px 1px 7px #000;
 }
 /* ==========================================================================
    Homepage Content
@@ -5853,10 +5944,8 @@ body.the-pyramid .content #testDiv {
 #keyshot {
   position: absolute;
   top: 5%;
-  left: 50%;
-  margin-left: -25%;
   height: 90%;
-  z-index: 10;
+  z-index: 30;
 }
 .roundSlideshow {
   position: absolute;
@@ -5867,7 +5956,7 @@ body.the-pyramid .content #testDiv {
   border-radius: 300px;
   overflow: hidden;
   background: white;
-  border: 10px solid #ffffff;
+  border: 10px solid #FFF;
 }
 .roundSlideshow img {
   min-height: 300px;
@@ -5896,13 +5985,15 @@ body.the-pyramid .content #testDiv {
 }
 .thumbnail img {
   border-radius: 50%;
-  border: 10px solid #ffffff;
+  border: 7px solid #ffffff;
 }
 /* ==========================================================================
    Sidebar
    ========================================================================== */
 .sidebar .widget {
   font-size: 120%;
+  margin: 2em 0;
+  min-width: 284px;
 }
 .sidebar .widget li {
   color: white;
@@ -5925,6 +6016,9 @@ body.the-pyramid .content #testDiv {
 /* ==========================================================================
    Footer
    ========================================================================== */
+.content-info {
+  color: white;
+}
 /* ==========================================================================
    DJs
    ========================================================================== */
@@ -5965,6 +6059,7 @@ body.the-pyramid .content #testDiv {
   display: inline-block;
   padding: 0.75em 1.5em;
   border: 3px solid #FFF;
+  border-radius: 20px;
 }
 .dj-grid li h4.AtTheHeads {
   background: #ae281b;
@@ -5987,7 +6082,7 @@ body.the-pyramid .content #testDiv {
   color: #1c5a99;
 }
 .dj-grid li img {
-  border: 10px solid #ffffff;
+  border: 7px solid #ffffff;
   height: 150px;
   width: 150px;
   border-radius: 150px;
@@ -6019,3 +6114,8 @@ figure.alignnone {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media (min-width: 992px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: firebrick;
+  }
+}

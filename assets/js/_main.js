@@ -30,20 +30,7 @@ var Roots = {
             });
         });
 
-        $('.performers').css({'cursor':'pointer'}).click(function(e){
-            window.location.href = '/performers/dj-lineup';
-        });
-
-        $('.location').css({'cursor':'pointer'}).click(function(e){
-            window.location.href = '/location';
-        });
-
-        $('.tickets').css({'cursor':'pointer'}).click(function(e){
-            window.location.href = '/costs';
-        });
-
         $('.menu-ride-share-board a, .menu-videos a').attr('target','_blank');
-
 
         $("a.fancybox").fancybox({
             'padding'			: 	20,
@@ -90,6 +77,14 @@ var Roots = {
             "show": true
         });
         */
+
+        $('#keyshot').css({'left':($(window).width()-$('#keyshot').width())/2+'px'});
+        $(window).resize(function(){
+
+            $('#keyshot').css({'left':($(window).width()-$('#keyshot').width())/2+'px'});
+
+
+        });
 
     }
   },

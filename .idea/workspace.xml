@@ -5,10 +5,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/_main.js" afterPath="$PROJECT_DIR$/assets/js/_main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/less/app.css" afterPath="$PROJECT_DIR$/assets/less/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/less/app.less" afterPath="$PROJECT_DIR$/assets/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-template-homepage.php" afterPath="$PROJECT_DIR$/base-template-homepage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/custom.php" afterPath="$PROJECT_DIR$/lib/custom.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content-single.php" afterPath="$PROJECT_DIR$/templates/content-single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/content.php" afterPath="$PROJECT_DIR$/templates/content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/scripts.php" afterPath="$PROJECT_DIR$/lib/scripts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-homepage.php" afterPath="$PROJECT_DIR$/template-homepage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="harvest-festival-wp-theme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,80 +34,46 @@
       <file leaf-file-name="app.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/less/app.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="32" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.6222991" vertical-offset="315" max-vertical-offset="3630">
+            <state line="116" column="22" selection-start="2957" selection-end="2963" vertical-scroll-proportion="0.46672428" vertical-offset="1200" max-vertical-offset="4545">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-djs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-djs.php">
+      <file leaf-file-name="content-single.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/content-single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="105" selection-start="881" selection-end="881" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="765">
+            <state line="17" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+              <folding>
+                <marker date="1402345388000" expanded="true" signature="65:551" placeholder="..." />
+                <marker date="1402345388000" expanded="true" signature="77:541" placeholder="..." />
+                <marker date="1402345388000" expanded="true" signature="113:242" placeholder="..." />
+                <marker date="1402345388000" expanded="true" signature="274:315" placeholder="..." />
+                <marker date="1402345388000" expanded="true" signature="328:469" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/content.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="6" selection-start="310" selection-end="310" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+              <folding>
+                <marker date="1402344871000" expanded="true" signature="17:309" placeholder="..." />
+                <marker date="1402344871000" expanded="true" signature="27:302" placeholder="..." />
+                <marker date="1402344871000" expanded="true" signature="61:224" placeholder="..." />
+                <marker date="1402344871000" expanded="true" signature="254:291" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry-meta.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/entry-meta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/_main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="11" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template-homepage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-homepage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
-              <folding>
-                <element signature="e#6#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/custom.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="810">
-              <folding>
-                <element signature="e#6#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/scripts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="65" selection-start="3470" selection-end="3470" vertical-scroll-proportion="-46.25" vertical-offset="0" max-vertical-offset="1245">
-              <folding>
-                <marker date="1402035216000" expanded="true" signature="3003:3394" placeholder="..." />
-                <marker date="1402035216000" expanded="true" signature="3029:3277" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,12 +89,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base-template-homepage.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-template-homepage.php">
+      <file leaf-file-name="_main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="662" selection-end="662" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1035">
+            <state line="80" column="84" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2145">
               <folding>
-                <marker date="1402028321000" expanded="true" signature="133:321" placeholder="..." />
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/scripts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="9" selection-start="3398" selection-end="3398" vertical-scroll-proportion="-41.791668" vertical-offset="62" max-vertical-offset="1245">
+              <folding>
+                <marker date="1402351714000" expanded="true" signature="3006:3397" placeholder="..." />
+                <marker date="1402351714000" expanded="true" signature="3032:3280" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/custom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="810">
+              <folding>
+                <element signature="e#6#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,9 +141,12 @@
         <option value="$PROJECT_DIR$/base-template-homepage.php" />
         <option value="$PROJECT_DIR$/template-homepage.php" />
         <option value="$PROJECT_DIR$/lib/custom.php" />
-        <option value="$PROJECT_DIR$/assets/js/_main.js" />
-        <option value="$PROJECT_DIR$/lib/scripts.php" />
         <option value="$PROJECT_DIR$/template-djs.php" />
+        <option value="$PROJECT_DIR$/templates/content-page.php" />
+        <option value="$PROJECT_DIR$/templates/content.php" />
+        <option value="$PROJECT_DIR$/templates/content-single.php" />
+        <option value="$PROJECT_DIR$/lib/scripts.php" />
+        <option value="$PROJECT_DIR$/assets/js/_main.js" />
         <option value="$PROJECT_DIR$/assets/less/app.less" />
       </list>
     </option>
@@ -310,6 +302,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fancybox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harvest-festival-wp-theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="harvest-festival-wp-theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -362,6 +380,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/skemantix/current clients/F#/SyFy!/bitbucket repo" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -435,43 +454,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <folding>
-            <marker date="1399886648000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399886648000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header-top-navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <marker date="1401894454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401894454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401894454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401894454000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401894454000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.050718512" vertical-offset="0" max-vertical-offset="1183">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="23" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1935">
@@ -483,7 +465,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="662" selection-end="662" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1035">
           <folding>
-            <marker date="1402028321000" expanded="true" signature="133:321" placeholder="..." />
+            <marker date="1402028321000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+          <folding>
+            <element signature="e#6#44#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -495,11 +486,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-homepage.php">
+    <entry file="file://$PROJECT_DIR$/templates/header-top-navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+        <state line="20" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="0.25359255" vertical-offset="0" max-vertical-offset="1183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/page-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-custom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-djs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="105" selection-start="881" selection-end="881" vertical-scroll-proportion="0.35502958" vertical-offset="0" max-vertical-offset="1183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.025359256" vertical-offset="0" max-vertical-offset="1183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="46" selection-end="46" vertical-scroll-proportion="0.012679628" vertical-offset="0" max-vertical-offset="1183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="630">
           <folding>
-            <element signature="e#6#44#0" expanded="true" />
+            <marker date="1399886648000" expanded="true" signature="133:321" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -513,44 +567,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="310" selection-end="310" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+          <folding>
+            <marker date="1402344871000" expanded="true" signature="17:309" placeholder="..." />
+            <marker date="1402344871000" expanded="true" signature="27:302" placeholder="..." />
+            <marker date="1402344871000" expanded="true" signature="61:224" placeholder="..." />
+            <marker date="1402344871000" expanded="true" signature="254:291" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content-single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+          <folding>
+            <marker date="1402345388000" expanded="true" signature="65:551" placeholder="..." />
+            <marker date="1402345388000" expanded="true" signature="77:541" placeholder="..." />
+            <marker date="1402345388000" expanded="true" signature="113:242" placeholder="..." />
+            <marker date="1402345388000" expanded="true" signature="274:315" placeholder="..." />
+            <marker date="1402345388000" expanded="true" signature="328:469" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/entry-meta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/scripts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="9" selection-start="3398" selection-end="3398" vertical-scroll-proportion="-41.791668" vertical-offset="62" max-vertical-offset="1245">
+          <folding>
+            <marker date="1402351714000" expanded="true" signature="3006:3397" placeholder="..." />
+            <marker date="1402351714000" expanded="true" signature="3032:3280" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/_main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="11" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
+        <state line="80" column="84" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2145">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1204" selection-end="1204" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="630">
-          <folding>
-            <marker date="1399886648000" expanded="true" signature="133:321" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/scripts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="65" selection-start="3470" selection-end="3470" vertical-scroll-proportion="-46.25" vertical-offset="0" max-vertical-offset="1245">
-          <folding>
-            <marker date="1402035216000" expanded="true" signature="3003:3394" placeholder="..." />
-            <marker date="1402035216000" expanded="true" signature="3029:3277" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-djs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="105" selection-start="881" selection-end="881" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/less/app.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="32" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.6222991" vertical-offset="315" max-vertical-offset="3630">
+        <state line="116" column="22" selection-start="2957" selection-end="2963" vertical-scroll-proportion="0.46672428" vertical-offset="1200" max-vertical-offset="4545">
           <folding />
         </state>
       </provider>

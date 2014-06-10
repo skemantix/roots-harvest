@@ -5,6 +5,15 @@
 @import "bootstrap/bootstrap.less";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
+@blue :#043d91;
+@navlinks: #FFF;
+@navlinks-hover: #FFF;
+@rounded-radius: 20px;
+@padding: 1em;
+@opacity: 0.92;
+@circleBorder: 7px solid #FFF;
+
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -16,14 +25,6 @@ body {
   background-size: cover;
   
 }
-
-@blue :#043d91;
-@navlinks: #FFF;
-@navlinks-hover: #FFF;
-@rounded-radius: 10px;
-@padding: 1em;
-@opacity: 0.9;
-@circleBorder: 10px solid #FFF;
 
 /* ==========================================================================
    Header
@@ -50,6 +51,8 @@ body {
     color: @blue;
     background: white;
   }
+
+
 }
 
 
@@ -64,27 +67,72 @@ body {
 
   #testDiv {
     font-family: 'Open Sans', sans-serif;
-    padding: @padding *2.5;
+    padding: @padding *2;
     border-radius: @rounded-radius;
     border: @circleBorder;
     background-clip: padding-box;
     background: rgba(12,51,191,0.87);
     color: #EEE;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.25em;
-    p {margin: 0 0 2em 0; }
+    p {margin: 0 0 1.4em 0; }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1.5em;
+      border-radius: @rounded-radius*0.66;
+    }
+    h4 {font-weight: 600;}
+    ul {margin: 1em 0em 2em;}
+    li {margin-bottom: 0.5em;}
+    a {font-weight: 600;}
   }
 }
 
+body.location .content #testDiv {background: rgba(217,78,0,@opacity);}
+body.tickets .content #testDiv {background: rgba(90,52,95,@opacity);h3 {color: #ffcb57; font-weight: 600;}}
+body.camping .content #testDiv {background: rgba(15,88,5,@opacity); h4 {color: #ffcb57;}}
+body.installations .content #testDiv {background: rgba(170,15,15,@opacity);}
+body.thermodome-cafe .content #testDiv {background: rgba(209,109,77,@opacity);}
+
+body.buses .content #testDiv {
+  background: rgba(148,83,96,@opacity);
+  ul {margin-top: 2.5em;}
+  li {margin-top: 1.5em;}
+}
+
 body.the-pyramid .content #testDiv {
-  background: rgba(10,10,10,0.92);
+  color: #333;
+  background: rgba(233,167,26,@opacity);
+  a {
+    color: #cd5500;
+  }
+}
+
+body.blog .content #testDiv, body.single .content #testDiv {
+  padding: @padding @padding*2;
+  background: rgba(146,38,42,@opacity);
+  margin-bottom: 2em;
+  h2 a {color: #da7885 !important; font-weight: 400; font-size: 125%;}
+  h1 {color: #da7885;}
+  article {
+    a {color: #cd4b4a;}
+    p.author {display: none;}
+    time {display: inline-block; margin-bottom: 1em; text-transform: uppercase; font-size: 84%;}
+  }
+
+}
+
+body.contact-us .content #testDiv {
+  background: rgba(0,136,154,@opacity);
+  a {color: #67edff; }
 }
 
 .page-header {
   margin: 0 0 20px;
   border-bottom: 0;
-  h1 {font-size: 3em; color: white; font-weight: 600;}
+  h1 {font-size: 3em; color: white; font-weight: 600; text-shadow: 1px 1px 7px #000;}
 }
 
 
@@ -95,10 +143,8 @@ body.the-pyramid .content #testDiv {
 #keyshot {
   position: absolute;
   top: 5%;
-  left: 50%;
-  margin-left: -25%;
   height: 90%;
-  z-index: 10;
+  z-index: 30;
 }
 
 .roundSlideshow {
@@ -110,7 +156,7 @@ body.the-pyramid .content #testDiv {
   border-radius: 300px;
   overflow: hidden;
   background: white;
-  border: @circleBorder;
+  border: 10px solid #FFF;
   img {
     min-height: 300px;
     min-width: 400px;
@@ -154,7 +200,8 @@ body.the-pyramid .content #testDiv {
     li {color: white;}
     h3 {color: #fff; text-shadow: 1px 1px 7px #000; font-size: 24pt; text-transform: uppercase; font-weight: bold; text-align: center}
     a {color: #ebce0f; font-weight: 400;}
-
+    margin: 2em 0;
+    min-width: 284px;
   }
 }
 
@@ -178,7 +225,7 @@ body.the-pyramid .content #testDiv {
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info { color: white;}
 
 
 
@@ -194,7 +241,17 @@ body.the-pyramid .content #testDiv {
     a:hover {text-decoration: none; }
     h2 {font-size: 1.5em; margin: 0.75em 0 -0.5em;  line-height: 1; text-shadow: 0 0 7px #000;}
     h3 {font-size: 1em; line-height: 0.8em; font-weight: 300; color: #DDD;text-shadow: 0 0 5px #000;}
-    h4 {font-size: 0.92em; line-height: 1; font-weight: 400; background: #c5371c; color: #FFF; display: inline-block; padding: 0.75em 1.5em;border: 3px solid #FFF; }
+    h4 {
+      font-size: 0.92em;
+      line-height: 1;
+      font-weight: 400;
+      background: #c5371c;
+      color: #FFF;
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      border: 3px solid #FFF;
+      border-radius: @rounded-radius;
+    }
 
     h4.AtTheHeads {background: #ae281b; color: white}
     h4.ThePyramid {background: #eec325; color: #333}
@@ -231,6 +288,10 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 @media (min-width: @screen-sm-min) { }
 
-@media (min-width: @screen-md-min) { }
+@media (min-width: @screen-md-min) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: firebrick;
+  }
+}
 
 @media (min-width: @screen-lg-min) { }
