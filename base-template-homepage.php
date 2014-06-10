@@ -19,8 +19,8 @@
 
   <div class="wrap container" role="document">
 
-    <img src="/assets/img/homepage-flyer-keyshot-top.png" alt="keyshot-top" id="keyshot-top"/>
-    <img src="/assets/img/homepage-flyer-keyshot.png" alt="keyshot" id="keyshot"/>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-flyer-keyshot-top.png" alt="keyshot-top" id="keyshot-top"/>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-flyer-keyshot.png" alt="keyshot" id="keyshot"/>
 
     <div id="leftSlider" class="roundSlideshow">
         <img src="/media/1a-2-300x200.jpg" alt="slideLeft 1"/>

@@ -5785,7 +5785,7 @@ html {
 body {
   min-height: 100%;
   height: 100%;
-  background: url('/assets/img/bgs/face.jpg') no-repeat;
+  background: url('../img/bgs/face.jpg') no-repeat center center;
   background-size: cover;
 }
 /* ==========================================================================
@@ -5814,17 +5814,21 @@ body {
   color: #043d91;
   background: white;
 }
+.banner .navbar-nav > li > a {
+  color: #FFF;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
 .content {
   padding: 5em 1em 1em;
+  position: relative;
 }
 .content #testDiv {
   font-family: 'Open Sans', sans-serif;
   padding: 2em;
-  border-radius: 20px;
-  border: 7px solid #ffffff;
+  border-radius: 0 30px;
+  border: 7px solid rgba(255, 255, 255, 0.75);
   background-clip: padding-box;
   background: rgba(12, 51, 191, 0.87);
   color: #EEE;
@@ -5834,12 +5838,17 @@ body {
 }
 .content #testDiv p {
   margin: 0 0 1.4em 0;
+  padding: 0 1em;
+}
+.content #testDiv p img {
+  margin-left: -1em;
+  max-width: 106%;
 }
 .content #testDiv img {
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5em;
-  border-radius: 14px;
+  border-radius: 0 14px;
   border: 7px solid rgba(0, 0, 0, 0.2);
 }
 .content #testDiv h4 {
@@ -5865,6 +5874,19 @@ body {
 .content #testDiv a {
   font-weight: 600;
 }
+.page-header {
+  margin: 0 0 10px 10px;
+  border-bottom: 0;
+}
+.page-header h1 {
+  font-size: 3.33em;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 7px #000;
+}
+body.location {
+  background-image: url('../img/bgs/midBG.jpg');
+}
 body.location .content #testDiv {
   background: rgba(217, 78, 0, 0.92);
 }
@@ -5872,18 +5894,33 @@ body.installations .content #testDiv {
   background: rgba(170, 15, 15, 0.92);
 }
 body.installations .content #testDiv li {
-  margin-bottom: 1em;
+  margin: 0 0 1em 0.5em;
+  font-size: 125%;
 }
 body.installations .content #testDiv li:before {
+  margin-left: -50px;
+  font-size: 150%;
   content: "\f107";
   color: #870400;
   text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, -1px 1px 0 #cccccc, 1px 1px 0 #cccccc;
 }
+body.thermodome-cafe {
+  background-image: url('../img/bgs/dome2.jpg');
+}
 body.thermodome-cafe .content #testDiv {
   background: rgba(209, 109, 77, 0.92);
 }
+body.dj-lineup {
+  background-image: url('../img/bgs/djsBG.JPG');
+}
+body.crash {
+  background-image: url('../img/bgs/crashBG.jpg');
+}
 body.crash .content #testDiv {
   background: rgba(92, 103, 133, 0.92);
+}
+body.camping {
+  background-image: url('../img/bgs/campBG.jpg');
 }
 body.camping .content #testDiv {
   background: rgba(15, 88, 5, 0.92);
@@ -5898,6 +5935,9 @@ body.camping .content #testDiv .packing li:before {
 body.camping .content #testDiv .prohibited li:before {
   content: "\f335";
   color: #c82948;
+}
+body.tickets {
+  background-image: url('../img/bgs/tix.jpg');
 }
 body.tickets .content #testDiv {
   background: rgba(90, 52, 95, 0.92);
@@ -5926,8 +5966,23 @@ body.buses .content #testDiv ul {
 body.buses .content #testDiv li {
   margin-top: 1.5em;
 }
+body.buses .content #testDiv li:before {
+  content: "\f488";
+  color: #ffd05e;
+  font-size: 150%;
+}
+body.circus {
+  background-image: url('../img/bgs/circusBG.jpg');
+}
+body.photos {
+  background-image: url('../img/bgs/angelaRock.jpg');
+}
+body.the-pyramid {
+  background-image: url('../img/bgs/pyrBG.jpg');
+}
 body.the-pyramid .content #testDiv {
   color: #333;
+  font-weight: 400;
   background: rgba(233, 167, 26, 0.92);
 }
 body.the-pyramid .content #testDiv a {
@@ -5937,6 +5992,10 @@ body.the-pyramid .content #testDiv a {
 }
 body.the-pyramid .content #testDiv a:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+body.blog,
+body.single {
+  background-image: url('../img/bgs/foggy.jpg');
 }
 body.blog .content #testDiv,
 body.single .content #testDiv {
@@ -5988,6 +6047,9 @@ body.blog .content #testDiv article .entry-summary,
 body.single .content #testDiv article .entry-summary {
   padding-left: 50px;
 }
+body.contact-us {
+  background-image: url('../img/bgs/blue_water.jpg');
+}
 body.contact-us .content #testDiv {
   background: rgba(0, 136, 154, 0.92);
 }
@@ -6011,16 +6073,6 @@ body.contact-us .content #testDiv .individual li:before {
   content: "\f110";
   color: #d6f258;
   font-size: 26px;
-}
-.page-header {
-  margin: 0 0 20px;
-  border-bottom: 0;
-}
-.page-header h1 {
-  font-size: 3em;
-  color: white;
-  font-weight: 600;
-  text-shadow: 1px 1px 7px #000;
 }
 /* ==========================================================================
    Homepage Content
@@ -6075,23 +6127,28 @@ body.contact-us .content #testDiv .individual li:before {
 }
 .thumbnail img {
   border-radius: 50%;
-  border: 7px solid #ffffff;
+  border: 7px solid rgba(255, 255, 255, 0.75);
 }
 /* ==========================================================================
    Sidebar
    ========================================================================== */
+.sidebar {
+  right: 0;
+  position: fixed;
+}
 .sidebar .widget {
   font-size: 120%;
-  margin: 2em 0;
+  margin: 1em 0;
+  max-width: 340px;
   min-width: 284px;
 }
 .sidebar .widget li {
   color: white;
 }
 .sidebar .widget h3 {
-  color: #fff;
+  color: #acca11;
   text-shadow: 1px 1px 7px #000;
-  font-size: 24pt;
+  font-size: 28px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -6100,12 +6157,18 @@ body.contact-us .content #testDiv .individual li:before {
   color: #ebce0f;
   font-weight: 400;
 }
+section.widget_search .input-group {
+  border: 10px solid transparent;
+}
 /* ==========================================================================
    Posts
    ========================================================================== */
 /* ==========================================================================
    Footer
    ========================================================================== */
+footer {
+  height: 50px;
+}
 .content-info {
   color: white;
 }
@@ -6153,7 +6216,7 @@ body.contact-us .content #testDiv .individual li:before {
   display: inline-block;
   padding: 0.75em 1.5em;
   border: 3px solid #FFF;
-  border-radius: 20px;
+  border-radius: 0 30px;
 }
 .dj-grid li h4.AtTheHeads {
   background: #ae281b;
@@ -6178,6 +6241,7 @@ body.contact-us .content #testDiv .individual li:before {
 .dj-grid li .thumb {
   height: 184px;
   width: 184px;
+  margin: 0 auto;
   border-radius: 184px;
   padding: 15px;
   background: rgba(255, 255, 255, 0.1);
@@ -6190,7 +6254,7 @@ body.contact-us .content #testDiv .individual li:before {
   border-radius: 150px;
   overflow: hidden;
 }
-.dj-grid li:after {
+.dj-grid:after {
   content: '';
   clear: both;
   display: block;
