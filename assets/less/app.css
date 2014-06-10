@@ -5829,8 +5829,8 @@ body {
   background: rgba(12, 51, 191, 0.87);
   color: #EEE;
   margin: 0;
-  font-weight: 400;
-  font-size: 1.25em;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 .content #testDiv p {
   margin: 0 0 1.4em 0;
@@ -5839,22 +5839,65 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5em;
-  border-radius: 13.2px;
+  border-radius: 14px;
+  border: 7px solid rgba(0, 0, 0, 0.2);
 }
 .content #testDiv h4 {
   font-weight: 600;
 }
 .content #testDiv ul {
-  margin: 1em 0em 2em;
+  margin: 0.8em 0em 2em;
 }
 .content #testDiv li {
-  margin-bottom: 0.5em;
+  margin-bottom: 6px;
+  line-height: 24px;
+  list-style: none;
+}
+.content #testDiv li:before {
+  content: "\f110";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 24px/1 'dashicons';
+  margin-left: -35px;
+  position: absolute;
+  word-wrap: break-word;
 }
 .content #testDiv a {
   font-weight: 600;
 }
 body.location .content #testDiv {
   background: rgba(217, 78, 0, 0.92);
+}
+body.installations .content #testDiv {
+  background: rgba(170, 15, 15, 0.92);
+}
+body.installations .content #testDiv li {
+  margin-bottom: 1em;
+}
+body.installations .content #testDiv li:before {
+  content: "\f107";
+  color: #870400;
+  text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, -1px 1px 0 #cccccc, 1px 1px 0 #cccccc;
+}
+body.thermodome-cafe .content #testDiv {
+  background: rgba(209, 109, 77, 0.92);
+}
+body.crash .content #testDiv {
+  background: rgba(92, 103, 133, 0.92);
+}
+body.camping .content #testDiv {
+  background: rgba(15, 88, 5, 0.92);
+}
+body.camping .content #testDiv h4 {
+  color: #ffcb57;
+}
+body.camping .content #testDiv .packing li:before {
+  content: "\f147";
+  color: #62c127;
+}
+body.camping .content #testDiv .prohibited li:before {
+  content: "\f335";
+  color: #c82948;
 }
 body.tickets .content #testDiv {
   background: rgba(90, 52, 95, 0.92);
@@ -5863,17 +5906,16 @@ body.tickets .content #testDiv h3 {
   color: #ffcb57;
   font-weight: 600;
 }
-body.camping .content #testDiv {
-  background: rgba(15, 88, 5, 0.92);
+body.tickets .content #testDiv .pricing li:before {
+  content: "\f323";
+  color: #a2d663;
+  font-size: 110%;
+  margin-top: 2px;
 }
-body.camping .content #testDiv h4 {
-  color: #ffcb57;
-}
-body.installations .content #testDiv {
-  background: rgba(170, 15, 15, 0.92);
-}
-body.thermodome-cafe .content #testDiv {
-  background: rgba(209, 109, 77, 0.92);
+body.tickets .content #testDiv .locations li:before {
+  content: "\f230";
+  color: #5fa8cd;
+  font-weight: bold;
 }
 body.buses .content #testDiv {
   background: rgba(148, 83, 96, 0.92);
@@ -5889,7 +5931,12 @@ body.the-pyramid .content #testDiv {
   background: rgba(233, 167, 26, 0.92);
 }
 body.the-pyramid .content #testDiv a {
-  color: #cd5500;
+  color: #8F440E;
+  padding: 5px 7px;
+  border-radius: 7px;
+}
+body.the-pyramid .content #testDiv a:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 body.blog .content #testDiv,
 body.single .content #testDiv {
@@ -5899,9 +5946,22 @@ body.single .content #testDiv {
 }
 body.blog .content #testDiv h2 a,
 body.single .content #testDiv h2 a {
-  color: #da7885 !important;
+  color: #FFF !important;
   font-weight: 400;
   font-size: 125%;
+  margin-left: 50px;
+}
+body.blog .content #testDiv h2 a:before,
+body.single .content #testDiv h2 a:before {
+  content: "\f348";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 48px/1 'dashicons';
+  margin-left: -60px;
+  margin-top: -2px;
+  position: absolute;
+  word-wrap: break-word;
+  color: rgba(255, 255, 255, 0.5);
 }
 body.blog .content #testDiv h1,
 body.single .content #testDiv h1 {
@@ -5909,7 +5969,7 @@ body.single .content #testDiv h1 {
 }
 body.blog .content #testDiv article a,
 body.single .content #testDiv article a {
-  color: #cd4b4a;
+  color: #ddde50;
 }
 body.blog .content #testDiv article p.author,
 body.single .content #testDiv article p.author {
@@ -5918,15 +5978,39 @@ body.single .content #testDiv article p.author {
 body.blog .content #testDiv article time,
 body.single .content #testDiv article time {
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   text-transform: uppercase;
   font-size: 84%;
+  color: #da7885;
+  margin-left: 55px;
+}
+body.blog .content #testDiv article .entry-summary,
+body.single .content #testDiv article .entry-summary {
+  padding-left: 50px;
 }
 body.contact-us .content #testDiv {
   background: rgba(0, 136, 154, 0.92);
 }
 body.contact-us .content #testDiv a {
   color: #67edff;
+  font-size: 125%;
+  font-weight: 400;
+}
+body.contact-us .content #testDiv ul {
+  margin-top: 1em;
+}
+body.contact-us .content #testDiv li {
+  margin-top: 0.7em;
+}
+body.contact-us .content #testDiv .group li:before {
+  content: "\f465";
+  color: #FFF;
+  font-size: 28px;
+}
+body.contact-us .content #testDiv .individual li:before {
+  content: "\f110";
+  color: #d6f258;
+  font-size: 26px;
 }
 .page-header {
   margin: 0 0 20px;
@@ -5947,10 +6031,16 @@ body.contact-us .content #testDiv a {
   height: 90%;
   z-index: 30;
 }
+#keyshot-top {
+  position: absolute;
+  bottom: 5%;
+  height: 51%;
+  z-index: 50;
+}
 .roundSlideshow {
   position: absolute;
   bottom: 5%;
-  z-index: 20;
+  z-index: 40;
   width: 300px;
   height: 300px;
   border-radius: 300px;
@@ -6022,7 +6112,11 @@ body.contact-us .content #testDiv a {
 /* ==========================================================================
    DJs
    ========================================================================== */
+.dj-grid {
+  margin-left: -4em;
+}
 .dj-grid li {
+  min-width: 225px;
   font-family: 'Open Sans', sans-serif;
   list-style: none;
   float: left;
@@ -6081,8 +6175,16 @@ body.contact-us .content #testDiv a {
   background: #a8cbef;
   color: #1c5a99;
 }
+.dj-grid li .thumb {
+  height: 184px;
+  width: 184px;
+  border-radius: 184px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+}
 .dj-grid li img {
-  border: 7px solid #ffffff;
+  border: 3px solid rgba(255, 255, 255, 0.9);
   height: 150px;
   width: 150px;
   border-radius: 150px;

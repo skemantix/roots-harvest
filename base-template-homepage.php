@@ -19,6 +19,7 @@
 
   <div class="wrap container" role="document">
 
+    <img src="/assets/img/homepage-flyer-keyshot-top.png" alt="keyshot-top" id="keyshot-top"/>
     <img src="/assets/img/homepage-flyer-keyshot.png" alt="keyshot" id="keyshot"/>
 
     <div id="leftSlider" class="roundSlideshow">

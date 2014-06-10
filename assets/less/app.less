@@ -74,27 +74,65 @@ body {
     background: rgba(12,51,191,0.87);
     color: #EEE;
     margin: 0;
-    font-weight: 400;
-    font-size: 1.25em;
+    font-weight: 300;
+    font-size: 1.2em;
     p {margin: 0 0 1.4em 0; }
     img {
       max-width: 100%;
       height: auto;
       margin-bottom: 1.5em;
-      border-radius: @rounded-radius*0.66;
+      border-radius: 14px;
+      border: 7px solid rgba(0,0,0,0.2);
     }
     h4 {font-weight: 600;}
-    ul {margin: 1em 0em 2em;}
-    li {margin-bottom: 0.5em;}
+    ul {margin: 0.8em 0em 2em;}
+    li {
+      margin-bottom: 6px;
+      line-height: 24px;
+      list-style: none;
+    }
+    li:before {
+      content: "\f110";
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      font: normal 24px/1 'dashicons';
+      margin-left: -35px;
+      position: absolute;
+      word-wrap: break-word;
+    }
     a {font-weight: 600;}
   }
 }
 
 body.location .content #testDiv {background: rgba(217,78,0,@opacity);}
-body.tickets .content #testDiv {background: rgba(90,52,95,@opacity);h3 {color: #ffcb57; font-weight: 600;}}
-body.camping .content #testDiv {background: rgba(15,88,5,@opacity); h4 {color: #ffcb57;}}
-body.installations .content #testDiv {background: rgba(170,15,15,@opacity);}
+
+
+body.installations .content #testDiv {
+  background: rgba(170,15,15,@opacity);
+  li {margin-bottom: 1em;}
+  li:before {
+    content: "\f107";
+    color: #870400;
+    text-shadow: -1px -1px 0 #CCC, 1px -1px 0 #CCC, -1px 1px 0 #CCC, 1px 1px 0 #CCC,;
+  }
+}
+
 body.thermodome-cafe .content #testDiv {background: rgba(209,109,77,@opacity);}
+body.crash .content #testDiv {background: rgba(92,103,133,@opacity);}
+
+body.camping .content #testDiv {
+  background: rgba(15,88,5,@opacity);
+  h4 {color: #ffcb57;}
+  .packing li:before {content: "\f147"; color: #62c127;}
+  .prohibited li:before {content: "\f335"; color: #c82948;}
+}
+
+body.tickets .content #testDiv {
+  background: rgba(90,52,95,@opacity);
+  h3 {color: #ffcb57; font-weight: 600;}
+  .pricing li:before {content: "\f323"; color: #a2d663; font-size: 110%; margin-top: 2px;}
+  .locations li:before {content: "\f230"; color: #5fa8cd; font-weight: bold;}
+}
 
 body.buses .content #testDiv {
   background: rgba(148,83,96,@opacity);
@@ -105,28 +143,60 @@ body.buses .content #testDiv {
 body.the-pyramid .content #testDiv {
   color: #333;
   background: rgba(233,167,26,@opacity);
-  a {
-    color: #cd5500;
-  }
+  a {color: #8F440E; padding: 5px 7px; border-radius: 7px; }
+  a:hover {background: rgba(255,255,255,0.5); }
 }
 
 body.blog .content #testDiv, body.single .content #testDiv {
   padding: @padding @padding*2;
   background: rgba(146,38,42,@opacity);
   margin-bottom: 2em;
-  h2 a {color: #da7885 !important; font-weight: 400; font-size: 125%;}
+  h2 a {color: #FFF !important; font-weight: 400; font-size: 125%; margin-left: 50px;}
+  h2 a:before {
+    content: "\f348";
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 48px/1 'dashicons';
+    margin-left: -60px;
+    margin-top: -2px;
+    position: absolute;
+    word-wrap: break-word;
+    color: rgba(255,255,255,0.5)
+  }
   h1 {color: #da7885;}
   article {
-    a {color: #cd4b4a;}
+    a {color: #ddde50;}
     p.author {display: none;}
-    time {display: inline-block; margin-bottom: 1em; text-transform: uppercase; font-size: 84%;}
+    time {
+      display: inline-block;
+      margin-bottom: 1.2em;
+      text-transform: uppercase;
+      font-size: 84%;
+      color: #da7885;
+      margin-left: 55px;
+    }
+    .entry-summary {
+      padding-left: 50px;
+    }
   }
 
 }
 
 body.contact-us .content #testDiv {
   background: rgba(0,136,154,@opacity);
-  a {color: #67edff; }
+  a {color: #67edff; font-size: 125%; font-weight: 400}
+  ul {margin-top: 1em;}
+  li {margin-top: 0.7em;}
+  .group li:before {
+    content: "\f465";
+    color: #FFF;
+    font-size: 28px;
+  }
+  .individual  li:before {
+    content: "\f110";
+    color: #d6f258;
+    font-size: 26px;
+  }
 }
 
 .page-header {
@@ -147,10 +217,17 @@ body.contact-us .content #testDiv {
   z-index: 30;
 }
 
+#keyshot-top {
+  position: absolute;
+  bottom: 5%;
+  height: 51%;
+  z-index: 50;
+}
+
 .roundSlideshow {
   position: absolute;
   bottom: 5%;
-  z-index: 20;
+  z-index: 40;
   width: 300px;
   height: 300px;
   border-radius: 300px;
@@ -234,7 +311,9 @@ body.contact-us .content #testDiv {
    ========================================================================== */
 
 .dj-grid {
+  margin-left: -4em;
   li {
+    min-width: 225px;
     font-family: 'Open Sans', sans-serif;
     list-style: none; float: left; width: 25%;  min-height: 360px; text-align: center;
     a {width: 190px; color: #FFF}
@@ -258,8 +337,22 @@ body.contact-us .content #testDiv {
     h4.TheForest {background: #89a700; color: white;}
     h4.Crash {background: #999; color: black;}
     h4.ThermodomeCafe {background: #a8cbef; color: #1c5a99}
-
-    img {border: @circleBorder; height: 150px; width: 150px; border-radius: 150px; overflow: hidden}
+    .thumb {
+      height: 184px;
+      width: 184px;
+      border-radius: 184px;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0);
+    }
+    img {
+      border: 3px solid rgba(255,255,255,0.9);
+//      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+      height: 150px;
+      width: 150px;
+      border-radius: 150px;
+      overflow: hidden;
+    }
   }
   li:after {
     content:'';

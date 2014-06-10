@@ -25,7 +25,7 @@ Template Name: DJ Lineup
 			  
 			    <li>
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-						<?php echo get_the_post_thumbnail($post_id, 'thumbnail'); ?>
+						<div class="thumb"><?php echo get_the_post_thumbnail($post_id, 'thumbnail'); ?></div>
 						<h2><?php the_title(); ?></h2>
 						<h3><?php the_field('from'); ?></h3>
 						<h4 class="<?php echo str_replace('é','e',str_replace(' ','',get_field('where')))?>"><?php the_field('where'); ?></h4>
