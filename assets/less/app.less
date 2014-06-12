@@ -14,6 +14,8 @@
 @circleBorder: 7px solid rgba(255,255,255,0.75);
 
 
+@screen-sm-min: 480px;
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -21,7 +23,7 @@ html {min-height: 100%;}
 body {
   min-height: 100%;
   height: 100%;
-  background: url('../img/bgs/face.jpg') no-repeat center center;
+  background: #010e70 url('../img/bgs/face.jpg') no-repeat;
   background-size: cover;
 
 }
@@ -37,6 +39,7 @@ body {
   position: fixed;
   min-width: 100%;
   width: 100%;
+
 
   .navbar-nav > li > a {
     font-weight: 700;
@@ -59,6 +62,17 @@ body {
 
 }
 
+.navbar-header {
+  h1 {
+    position: absolute;
+    color: rgba(255,255,255,0.3);
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 39px;
+    display: none;
+    letter-spacing: -1px;
+  }
+}
 
 
 /* ==========================================================================
@@ -127,8 +141,9 @@ body {
   }
 }
 
+
 body.location {
-  background-image: url('../img/bgs/midBG.jpg');
+//  background-image: url('../img/bgs/midBG.jpg');
   .content #testDiv {background: rgba(217,78,0,@opacity);}
 }
 
@@ -155,20 +170,20 @@ body.installations {
 ///////////////////////////////////////////////////////////////////////////
 
 body.thermodome-cafe {
-  background-image: url('../img/bgs/dome2.jpg');
+//  background-image: url('../img/bgs/dome2.jpg');
   .content #testDiv {background: rgba(209,109,77,@opacity);}
 }
 
 
 body.dj-lineup {
-  background-image: url('../img/bgs/djsBG.JPG');
+//  background-image: url('../img/bgs/djsBG.JPG');
 }
 
 // CRASH
 ///////////////////////////////////////////////////////////////////////////
 
 body.crash {
-  background-image: url('../img/bgs/crashBG.jpg');
+//  background-image: url('../img/bgs/crashBG.jpg');
   .content #testDiv {background: rgba(92,103,133,@opacity);}
 }
 
@@ -177,7 +192,7 @@ body.crash {
 ///////////////////////////////////////////////////////////////////////////
 
 body.camping {
-  background-image: url('../img/bgs/campBG.jpg');
+//  background-image: url('../img/bgs/campBG.jpg');
   .content #testDiv {
     background: rgba(15,88,5,@opacity);
     h4 {color: #ffcb57;}
@@ -191,7 +206,7 @@ body.camping {
 ///////////////////////////////////////////////////////////////////////////
 
 body.tickets {
-  background-image: url('../img/bgs/tix.jpg');
+//  background-image: url('../img/bgs/tix.jpg');
   .content #testDiv {
     background: rgba(90,52,95,@opacity);
     h3 {color: #ffcb57; font-weight: 600;}
@@ -218,19 +233,26 @@ body.buses {
 }
 
 
+// CIRCUS
+///////////////////////////////////////////////////////////////////////////
+
 body.circus {
-  background-image: url('../img/bgs/circusBG.jpg');
+//  background-image: url('../img/bgs/circusBG.jpg');
 }
 
+
+// PHOTOS
+///////////////////////////////////////////////////////////////////////////
+
 body.photos {
-  background-image: url('../img/bgs/angelaRock.jpg');
+//  background-image: url('../img/bgs/angelaRock.jpg');
 }
 
 // PYRAMID
 ///////////////////////////////////////////////////////////////////////////
 
 body.the-pyramid {
-  background-image: url('../img/bgs/pyrBG.jpg');
+//  background-image: url('../img/bgs/pyrBG.jpg');
   .content #testDiv {
     color: #333;
     font-weight: 400;
@@ -245,7 +267,7 @@ body.the-pyramid {
 ///////////////////////////////////////////////////////////////////////////
 
 body.blog, body.single {
-  background-image: url('../img/bgs/foggy.jpg');
+//  background-image: url('../img/bgs/foggy.jpg');
   .content #testDiv {
     padding: @padding @padding*2;
     background: rgba(146,38,42,@opacity);
@@ -287,7 +309,7 @@ body.blog, body.single {
 ///////////////////////////////////////////////////////////////////////////
 
 body.contact-us {
-  background-image: url('../img/bgs/blue_water.jpg');
+//  background-image: url('../img/bgs/blue_water.jpg');
   .content #testDiv {
     background: rgba(0,136,154,@opacity);
     a {color: #67edff; font-size: 125%; font-weight: 400}
@@ -375,7 +397,7 @@ body.contact-us {
 
 .sidebar {
   right: 0;
-  position: fixed;
+  position: relative;
   .widget {
     font-size: 120%;
     li {color: white;}
@@ -416,7 +438,7 @@ section.widget_search .input-group {
 /* ==========================================================================
    Footer
    ========================================================================== */
-footer {height: 50px;}
+footer {height: 50px; display: none;}
 .content-info { color: white;}
 
 
@@ -495,12 +517,36 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm-min) { }
+@media only screen and (max-width: @screen-sm-min) {
+
+  .content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    #testDiv {
+      padding: 2em 1em 0 1.5em;
+      p {
+        padding: 0;
+      }
+    }
+  }
+
+  #leftSlider {
+    left: 5%;
+  }
+  #rightSlider {
+    right: 5%;
+  }
+
+  .navbar-header h1 {
+    display: block;
+  }
+
+
+}
+
 
 @media (min-width: @screen-md-min) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: firebrick;
-  }
+
 }
 
 @media (min-width: @screen-lg-min) { }

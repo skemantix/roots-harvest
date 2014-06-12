@@ -32,6 +32,7 @@ var Roots = {
 
         $('.menu-ride-share-board a, .menu-videos a').attr('target','_blank');
 
+
         $("a.fancybox").fancybox({
             'padding'			: 	20,
             'transitionIn'		:	'elastic',
@@ -74,9 +75,6 @@ var Roots = {
         }
         centerKey(); $(window).resize(centerKey);
 
-        function scaleSliders() {
-
-        }
 
         function slideShow(elem) {
             setInterval(function(){

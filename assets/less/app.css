@@ -470,7 +470,7 @@ p {
   font-weight: 200;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .lead {
     font-size: 21px;
   }
@@ -602,7 +602,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -735,7 +735,7 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .container {
     width: 750px;
   }
@@ -922,7 +922,7 @@ pre code {
 .col-xs-offset-0 {
   margin-left: 0%;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -1578,7 +1578,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1922,7 +1922,7 @@ select[multiple].input-lg {
   margin-bottom: 10px;
   color: #737373;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -1977,7 +1977,7 @@ select[multiple].input-lg {
 .form-horizontal .form-control-static {
   padding-top: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .form-horizontal .control-label {
     text-align: right;
   }
@@ -3112,7 +3112,7 @@ input[type="button"].btn-block {
   bottom: 100%;
   margin-bottom: 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -3525,7 +3525,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3543,7 +3543,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -3590,7 +3590,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -3611,7 +3611,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
@@ -3639,12 +3639,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-header {
     float: left;
   }
@@ -3661,7 +3661,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3690,7 +3690,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3703,7 +3703,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3715,7 +3715,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -3741,7 +3741,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -3771,7 +3771,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-toggle {
     display: none;
   }
@@ -3784,7 +3784,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -3806,7 +3806,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3822,7 +3822,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: -15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-left {
     float: left !important;
   }
@@ -3841,7 +3841,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3876,12 +3876,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-form {
     width: auto;
     border: 0;
@@ -3921,7 +3921,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -3986,7 +3986,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #e7e7e7;
   color: #555555;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
@@ -4069,7 +4069,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #080808;
   color: #ffffff;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
@@ -4379,7 +4379,7 @@ a.list-group-item.active > .badge,
 .jumbotron .container {
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -5170,7 +5170,7 @@ button.close {
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
@@ -5563,7 +5563,7 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -5673,7 +5673,7 @@ button.close {
 .visible-lg {
   display: none !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .visible-xs {
     display: block !important;
   }
@@ -5688,7 +5688,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .visible-sm {
     display: block !important;
   }
@@ -5733,12 +5733,12 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 991px) {
   .hidden-sm {
     display: none !important;
   }
@@ -5785,7 +5785,7 @@ html {
 body {
   min-height: 100%;
   height: 100%;
-  background: url('../img/bgs/face.jpg') no-repeat center center;
+  background: #010e70 url('../img/bgs/face.jpg') no-repeat;
   background-size: cover;
 }
 /* ==========================================================================
@@ -5816,6 +5816,15 @@ body {
 }
 .banner .navbar-nav > li > a {
   color: #FFF;
+}
+.navbar-header h1 {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 39px;
+  display: none;
+  letter-spacing: -1px;
 }
 /* ==========================================================================
    Content
@@ -5884,9 +5893,6 @@ body {
   font-weight: 600;
   text-shadow: 1px 1px 7px #000;
 }
-body.location {
-  background-image: url('../img/bgs/midBG.jpg');
-}
 body.location .content #testDiv {
   background: rgba(217, 78, 0, 0.92);
 }
@@ -5904,23 +5910,11 @@ body.installations .content #testDiv li:before {
   color: #870400;
   text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, -1px 1px 0 #cccccc, 1px 1px 0 #cccccc;
 }
-body.thermodome-cafe {
-  background-image: url('../img/bgs/dome2.jpg');
-}
 body.thermodome-cafe .content #testDiv {
   background: rgba(209, 109, 77, 0.92);
 }
-body.dj-lineup {
-  background-image: url('../img/bgs/djsBG.JPG');
-}
-body.crash {
-  background-image: url('../img/bgs/crashBG.jpg');
-}
 body.crash .content #testDiv {
   background: rgba(92, 103, 133, 0.92);
-}
-body.camping {
-  background-image: url('../img/bgs/campBG.jpg');
 }
 body.camping .content #testDiv {
   background: rgba(15, 88, 5, 0.92);
@@ -5935,9 +5929,6 @@ body.camping .content #testDiv .packing li:before {
 body.camping .content #testDiv .prohibited li:before {
   content: "\f335";
   color: #c82948;
-}
-body.tickets {
-  background-image: url('../img/bgs/tix.jpg');
 }
 body.tickets .content #testDiv {
   background: rgba(90, 52, 95, 0.92);
@@ -5971,15 +5962,6 @@ body.buses .content #testDiv li:before {
   color: #ffd05e;
   font-size: 150%;
 }
-body.circus {
-  background-image: url('../img/bgs/circusBG.jpg');
-}
-body.photos {
-  background-image: url('../img/bgs/angelaRock.jpg');
-}
-body.the-pyramid {
-  background-image: url('../img/bgs/pyrBG.jpg');
-}
 body.the-pyramid .content #testDiv {
   color: #333;
   font-weight: 400;
@@ -5992,10 +5974,6 @@ body.the-pyramid .content #testDiv a {
 }
 body.the-pyramid .content #testDiv a:hover {
   background: rgba(255, 255, 255, 0.5);
-}
-body.blog,
-body.single {
-  background-image: url('../img/bgs/foggy.jpg');
 }
 body.blog .content #testDiv,
 body.single .content #testDiv {
@@ -6046,9 +6024,6 @@ body.single .content #testDiv article time {
 body.blog .content #testDiv article .entry-summary,
 body.single .content #testDiv article .entry-summary {
   padding-left: 50px;
-}
-body.contact-us {
-  background-image: url('../img/bgs/blue_water.jpg');
 }
 body.contact-us .content #testDiv {
   background: rgba(0, 136, 154, 0.92);
@@ -6134,7 +6109,7 @@ body.contact-us .content #testDiv .individual li:before {
    ========================================================================== */
 .sidebar {
   right: 0;
-  position: fixed;
+  position: relative;
 }
 .sidebar .widget {
   font-size: 120%;
@@ -6168,6 +6143,7 @@ section.widget_search .input-group {
    ========================================================================== */
 footer {
   height: 50px;
+  display: none;
 }
 .content-info {
   color: white;
@@ -6280,8 +6256,24 @@ figure.alignnone {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media (min-width: 992px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: firebrick;
+@media only screen and (max-width: 480px) {
+  .content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .content #testDiv {
+    padding: 2em 1em 0 1.5em;
+  }
+  .content #testDiv p {
+    padding: 0;
+  }
+  #leftSlider {
+    left: 5%;
+  }
+  #rightSlider {
+    right: 5%;
+  }
+  .navbar-header h1 {
+    display: block;
   }
 }

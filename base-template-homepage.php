@@ -19,8 +19,8 @@
 
   <div class="wrap container" role="document">
 
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-flyer-keyshot-top.png" alt="keyshot-top" id="keyshot-top"/>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-flyer-keyshot.png" alt="keyshot" id="keyshot"/>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-flyer-top.png" alt="keyshot-top" id="keyshot-top"/>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/homepage-flyer.png" alt="keyshot" id="keyshot"/>
 
     <div id="leftSlider" class="roundSlideshow">
         <img src="/media/1a-2-300x200.jpg" alt="slideLeft 1"/>
@@ -40,25 +40,8 @@
 
   </div><!-- /.wrap -->
 
-  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-              </div>
-              <div class="modal-body">
-                  <h3>Modal Body</h3>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-          </div>
-      </div>
-  </div>
 
-
+  <?php get_template_part('templates/footer'); ?>
 
 </body>
 </html>
